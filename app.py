@@ -16,6 +16,7 @@ import numpy as np
 
 import os  
 from flask import Flask, render_template, request
+
 from werkzeug.utils import secure_filename
 
 
@@ -33,15 +34,22 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
 
+
+
 # function to check the file extension
 def allowed_file(filename):  
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # route and function to handle the home page
+@app.route('/')
+def front_page():
+    return render_template('home.html')
+
 @app.route('/home')
 def home_page():  
     return render_template('index.html')
+
 
 # route and function to handle the upload page
 @app.route('/upload', methods=['GET', 'POST'])

@@ -13,10 +13,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<body style="background-color: #9DB2BF;">
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #27374D;">
+  <!-- 
+  F5F0BB 9DB2BF 
+  -->
+<body style="background-color: #CFD2CF">  
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #B3C890;">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link active" href="/">Home<span class="sr-only"></span></a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link active" href="/home">English To Braille <span class="sr-only"></span></a>
         </li>
@@ -26,7 +32,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron center" style="background-color: #9DB2BF">
+  <div class="jumbotron center" style="background-color: #F5EDDC">
     {% if msg %}
     <h1 class="display-4">{{ msg }}</h1>
     {% endif %}
