@@ -1,9 +1,0 @@
-bin/
-dataset/
-include/
-lib/
-lib64/
-share/
-tensorflow/
-.vercel
-.gitignore
